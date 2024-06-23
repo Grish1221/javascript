@@ -6,13 +6,13 @@
 // console.log(arr2);
 // console.log(arr);
 
-// arr1 = [1 , 2 , 3 , 4 ];
-// arr2 = [5, 6, 7, 8, 9];
+arr1 = [1 , 2 , 3 , 4 ];
+arr2 = [5, 6, 7, 8, 9];
 // arr3 = arr1.concat(arr2);
-// console.log(arr3);
+//  console.log(arr3);
 
-// arr3 = [...arr1 , ...arr2];
-// console.log(arr3);
+arr3 = [...arr1 , ...arr2];
+console.log(arr3);
 
 // arr = [1 ,2 , 3, [4, 3], 45 , [23, [9, 10], 0]];
 // new_arr = arr.flat(1);
