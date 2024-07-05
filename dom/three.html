@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom last part</title>
+</head>
+<body style="background-color: #212121; color:aliceblue">
+      <ul class="languages">
+         <li>Javarcript</li>
+      </ul>
+</body>
+<script>
+       function addLang(langName){
+          const Li = document.createElement('li');
+          Li.innerHTML=langName
+          document.querySelector('.languages').appendChild(Li);
+       }
+
+       function addLangOptimisedWay(langName){
+          const Li = document.createElement('li');
+          Li.appendChild(document.createTextNode(langName));
+          document.querySelector('.languages').appendChild(Li);
+       }
+       addLangOptimisedWay('cpp');  
+       addLangOptimisedWay('java');  
+
+       const secondLang = document.querySelector('li:nth-child(2)');
+       //secondLang.innerHTML='Mojo'     //optimisation problem
+       const newLi = document.createElement('li');
+       newLi.appendChild(document.createTextNode("Mojo"));
+       secondLang.replaceWith(newLi);
+
+       const firstLang = document.querySelector("li:first-child");
+       firstLang.outerHTML= "<li>Typescript</li>"
+
+       const lastLang = document.querySelector("li:last-child");
+       lastLang.remove();
+</script>
+</html>
