@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM classes</title>
+</head>
+<body bgcolor="grey">
+<script>
+        const mydiv = document.createElement('div');
+        console.log(mydiv);
+        mydiv.className = 'class';
+        mydiv.id = 'myId';
+        mydiv.setAttribute("title", 'myTitle');
+        mydiv.style.backgroundColor = 'yellow'
+        const addtext = document.createTextNode("My text will be displayed now !");
+        mydiv.appendChild(addtext);
+
+        document.body.appendChild(mydiv);
+</script>    
+</body>
+</html>
