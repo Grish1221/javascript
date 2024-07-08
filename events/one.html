@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+</head>
+<body style = "background-color: #212121; color: aliceblue">
+      <h1>Amazing Images</h1>
+      <ul>
+          <li><img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="mountain" id="mountain"></li>
+          <li><img src="https://imgv3.fotor.com/images/slider-image/A-clear-close-up-photo-of-a-woman.jpg" alt="girl" id="girl"></li>
+          <li><img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/breathtaking-bali-nature-free-photo.jpg?w=600&quality=80" alt="nature" id="nature"></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75ebrwvgVW5Ks_oLfCbG8Httf3_9g-Ynl_Q&s" alt="eiffel tower" id="eiffeltower"></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0HZZONB2Xa0AoNJhtiqwQHnRIxFaHUteyaQ&s" alt="birds" id="birds"></li>
+          <li><a href="https://www.google.com" id="google" style="color: aliceblue">Google website</a></li>
+      </ul>
+</body>
+<script>
+    //    document.getElementById('mountain').onclick = function(){
+    //        alert('you clicked me !!')
+    //    }
+        //   document.getElementById('mountain').addEventListener('click', function(){
+        //       alert('You clicked me again!!')
+        //   })
+        document.getElementById('mountain').addEventListener('click', function(e){
+              console.log(e); 
+          }, false)
+</script>
+</html>
